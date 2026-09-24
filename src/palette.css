@@ -1,0 +1,16 @@
+:root{--bg:#090a11;--ink:#f7f4ed;--muted:#9b9dac;--lime:#4f7cff;--violet:#ffb547;--line:rgba(150,167,255,.17)}
+body{background:#090a11;background-image:radial-gradient(circle at 84% 12%,rgba(79,124,255,.16),transparent 30%),radial-gradient(circle at 12% 62%,rgba(255,181,71,.08),transparent 28%)}
+.nav{background:rgba(9,10,17,.76);border-color:rgba(135,157,255,.21);box-shadow:0 18px 55px rgba(0,0,0,.22)}
+.brand-word b{background:linear-gradient(135deg,#668cff,#ffb547);background-clip:text;-webkit-background-clip:text;color:transparent}
+.links a:hover{color:#ffbd59}
+.hero{background-image:linear-gradient(rgba(9,10,17,.35),rgba(9,10,17,.74)),url('/images/innovation-wave.png');filter:saturate(.82)}
+.hero:after{background:radial-gradient(circle at 50% 43%,transparent 0 23%,rgba(28,37,82,.2) 55%,#090a11 100%);box-shadow:inset 0 0 180px rgba(79,124,255,.08)}
+.hero h1 span{background:linear-gradient(135deg,#6d91ff,#ffb547);background-clip:text;-webkit-background-clip:text;color:transparent}
+.hero-tagline{color:#c3c5d1}
+.marquee b,.statement>span,.statement em,.mission em,.apply-panel em,.events .section-head i,.people .section-head i,.contact-cards svg,.person>svg{color:#ffb547}
+.metric,.round,.apply-panel a{background:linear-gradient(135deg,#547fff,#ffb547)}
+.program{background:#f1eee7}.section-head i,.contact i{color:#496fdc}
+.mission-orb{background:radial-gradient(circle,rgba(79,124,255,.27),rgba(255,181,71,.1) 42%,transparent 68%)}
+.people{background:#0d0f1a}.apply-panel{box-shadow:inset 0 1px rgba(255,255,255,.08),0 35px 90px rgba(0,0,0,.28)}
+.eyebrow span,.live-dot{background:#ffb547;box-shadow:0 0 16px #ffb547}.progress{background:linear-gradient(90deg,#547fff,#ffb547)}
+.topic-cloud span{border-color:rgba(120,145,255,.24)}.topic-cloud span:nth-child(2n){border-color:rgba(255,181,71,.25)}

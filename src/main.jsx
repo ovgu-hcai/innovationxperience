@@ -6,6 +6,7 @@ import './styles.css'
 import './partners.css'
 import './experience.css'
 import './routes-theme.css'
+import './palette.css'
 
 const events=[{day:'14',month:'OCT',title:'HCAI Leadership Lessons',type:'LEADERSHIP · TALK'},{day:'24',month:'OCT',title:'Innovation Xperience Kick-off',type:'COMMUNITY · TBA'},{day:'24—25',month:'NOV',title:'HCAI Symposium',type:'HUMAN-CENTRED AI'}]
 const pillars=[{n:'01',icon:Zap,title:'Startup Studio',text:'Move from early validation to a testable MVP with hands-on mentoring and an active incubator network.'},{n:'02',icon:Cpu,title:'Tech Lab',text:'Experiment with AI, IoT, data and design alongside academic and industry partners.'},{n:'03',icon:Users,title:'Community',text:'Meet collaborators at talks, challenges and working sessions built around real problems.'}]
