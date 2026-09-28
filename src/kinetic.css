@@ -38,3 +38,24 @@
 .team-grid a>svg{color:var(--aqua);right:23px;bottom:27px}
 @media(max-width:900px){.team-grid a{grid-column:span 6}.team-grid a:nth-child(2),.team-grid a:nth-child(5){margin-top:35px}}
 @media(max-width:600px){.team-grid a{grid-column:1/-1}.team-grid a:nth-child(2),.team-grid a:nth-child(5){margin-top:0}}
+
+/* Brand system from the supplied wave logo. */
+.page{scroll-margin-top:75px}
+.brand-lockup{display:inline-flex;align-items:center;gap:10px}
+.brand-mark{display:block;width:36px;height:29px;flex:none;background:url('/images/innovation-xperience-logo.jpg') center 22%/150px auto no-repeat}
+.brand-text{font-size:14px;letter-spacing:-.03em}
+.brand-text b{display:inline;color:#8dddf2;background:none;-webkit-background-clip:initial;background-clip:initial;width:auto;height:auto;font-size:inherit;text-shadow:none;box-shadow:none;border-radius:0}
+.hero{background:radial-gradient(ellipse at 50% 25%,rgba(78,228,196,.08),transparent 38%),#050506}
+.hero-brand{display:flex;flex-direction:column;align-items:center;width:min(720px,90vw);margin:0 auto 40px;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+.hero-logo{display:block;width:100%;aspect-ratio:2.5;background:url('/images/innovation-xperience-logo.jpg') center top/100% auto no-repeat}
+.hero-logo-name{margin-top:-10px;color:#efedf3;font-family:Georgia,serif;font-size:clamp(25px,4vw,48px);letter-spacing:.015em;font-variant:small-caps;line-height:1}
+.hero-logo-name b{font-size:1.18em;font-weight:400}
+.hero-logo-tagline{margin-top:10px;color:#aeb2c3;font-family:Georgia,serif;font-size:clamp(12px,1.8vw,19px);letter-spacing:.2em}
+.hero h1{font-size:clamp(54px,8vw,108px)}
+.hero h1 em{color:#a6bbf9;-webkit-text-stroke:0}
+.hero-actions a:first-child,.heading>span,.hero-inner>p:first-child{color:#57eac5}
+.about-card:hover{border-color:rgba(178,126,238,.5)}
+.card-2{background:linear-gradient(135deg,#dcd8f1,#d6e9f0)}
+.events-grid article:nth-child(2){background:linear-gradient(145deg,#475688,#232238)}
+.nav{background:rgba(5,5,8,.82)}
+@media(max-width:800px){.brand-mark{width:30px;height:25px;background-size:130px auto}.hero-brand{margin-bottom:34px}.hero-logo-name{margin-top:0}}

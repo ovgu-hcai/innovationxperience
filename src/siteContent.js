@@ -44,10 +44,7 @@ export const siteContent = {
     items:[
       {name:'Prof. Dr.-Ing. Ernesto William De Luca',role:'Head, Human-Centred Artificial Intelligence',image:'./images/team/ernesto.jpg',url:'https://ernestodeluca.eu/cv'},
       {name:'M.Sc. Het Darshan Mehta',role:'PhD Researcher · HCAI, OVGU',image:'./images/team/het.jpeg',url:'https://hetmehta.eu/'},
-      {name:'M.Sc. Iveta Jaroscakova',role:'Innovation Xperience Incubator Coordinator',image:'./images/team/iveta.jpeg',url:'https://www.hcai.ovgu.de/'},
-      {name:'B.Sc. Gavin Rony Correia',role:'HCAI Team',image:'./images/team/gavin.jpeg',url:'https://www.hcai.ovgu.de/'},
-      {name:'B.Sc. Shivnandini Ravikumar Chinnannvar',role:'HCAI Team',image:'./images/team/shivnandini.jpeg',url:'https://www.hcai.ovgu.de/'},
-      {name:'B.Sc. Yashashwini Sidramappa Awate',role:'HCAI Team',image:'./images/team/yashashwini-awate.jpg',url:'https://de.linkedin.com/in/yashashwini-awate-b2abb4227'}
+      {name:'M.Sc. Iveta Jaroscakova',role:'Innovation Xperience Incubator Coordinator',image:'./images/team/iveta.jpeg',url:'https://www.hcai.ovgu.de/'}
     ]
   },
   contact: {
