@@ -41,21 +41,61 @@
 
 /* Brand system from the supplied wave logo. */
 .page{scroll-margin-top:75px}
-.brand-lockup{display:inline-flex;align-items:center;gap:10px}
-.brand-mark{display:block;width:36px;height:29px;flex:none;background:url('/images/innovation-xperience-logo.jpg') center 22%/150px auto no-repeat}
-.brand-text{font-size:14px;letter-spacing:-.03em}
+.brand-lockup{display:inline-flex;align-items:center;gap:8px}
+.brand-mark{display:block;width:62px;height:28px;flex:none;background:url('/images/innovation-xperience-logo.jpg') center top/62px 62px no-repeat;mix-blend-mode:screen}
+.brand-text{gap:0;font-size:14px;letter-spacing:-.03em}
 .brand-text b{display:inline;color:#8dddf2;background:none;-webkit-background-clip:initial;background-clip:initial;width:auto;height:auto;font-size:inherit;text-shadow:none;box-shadow:none;border-radius:0}
 .hero{background:radial-gradient(ellipse at 50% 25%,rgba(78,228,196,.08),transparent 38%),#050506}
-.hero-brand{display:flex;flex-direction:column;align-items:center;width:min(720px,90vw);margin:0 auto 40px;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
-.hero-logo{display:block;width:100%;aspect-ratio:2.5;background:url('/images/innovation-xperience-logo.jpg') center top/100% auto no-repeat}
-.hero-logo-name{margin-top:-10px;color:#efedf3;font-family:Georgia,serif;font-size:clamp(25px,4vw,48px);letter-spacing:.015em;font-variant:small-caps;line-height:1}
-.hero-logo-name b{font-size:1.18em;font-weight:400}
-.hero-logo-tagline{margin-top:10px;color:#aeb2c3;font-family:Georgia,serif;font-size:clamp(12px,1.8vw,19px);letter-spacing:.2em}
-.hero h1{font-size:clamp(54px,8vw,108px)}
+.hero-brand{display:block;position:relative;width:min(570px,72vw);margin:6px auto 24px;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+.hero-brand:before{content:'';position:absolute;inset:12% 5% 0;border-radius:50%;background:radial-gradient(ellipse,rgba(83,227,194,.16),rgba(111,140,255,.1) 40%,transparent 72%);filter:blur(38px);animation:wave-glow 7s ease-in-out infinite alternate}
+.hero-logo{display:block;position:relative;width:100%;aspect-ratio:2.48;background:url('/images/innovation-xperience-logo.jpg') center top/100% auto no-repeat;mix-blend-mode:screen;animation:wave-float 7s ease-in-out infinite}
+@keyframes wave-float{50%{transform:translateY(-12px) rotate(-1deg)}}
+@keyframes wave-glow{to{transform:scale(1.14);opacity:.55}}
+.hero{padding-top:115px;padding-bottom:85px}
+.hero h1{font-size:clamp(54px,7.8vw,104px);line-height:.91;letter-spacing:-.075em}
 .hero h1 em{color:#a6bbf9;-webkit-text-stroke:0}
+.hero-copy{margin-top:30px}
+.hero-actions{gap:12px;margin-top:28px}
+.hero-actions a{padding:13px 19px;border:1px solid rgba(255,255,255,.16);border-radius:100px;background:rgba(255,255,255,.045);font-size:13px;transition:background .25s,border-color .25s,transform .25s}
+.hero-actions a:hover{background:rgba(255,255,255,.1);border-color:rgba(88,231,205,.55);transform:translateY(-3px)}
+.hero-actions a:first-child{background:rgba(83,227,194,.12);border-color:rgba(83,227,194,.35)}
 .hero-actions a:first-child,.heading>span,.hero-inner>p:first-child{color:#57eac5}
 .about-card:hover{border-color:rgba(178,126,238,.5)}
 .card-2{background:linear-gradient(135deg,#dcd8f1,#d6e9f0)}
 .events-grid article:nth-child(2){background:linear-gradient(145deg,#475688,#232238)}
 .nav{background:rgba(5,5,8,.82)}
-@media(max-width:800px){.brand-mark{width:30px;height:25px;background-size:130px auto}.hero-brand{margin-bottom:34px}.hero-logo-name{margin-top:0}}
+@media(max-width:800px){.brand-mark{width:46px;height:22px;background-size:46px 46px}.hero-brand{width:min(85vw,500px);margin-bottom:24px}.hero h1{font-size:clamp(46px,9vw,72px)}.hero-actions{gap:10px}.hero-actions a{justify-content:center}}
+@media(prefers-reduced-motion:reduce){.hero-logo,.hero-brand:before{animation:none}}
+
+/* Events: a concise front page with a fuller archive on demand. */
+.event-section-label{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin:95px 0 20px;border-top:1px solid var(--line);padding-top:20px}
+.event-section-label:first-of-type{margin-top:0}
+.event-section-label span{color:var(--aqua);font:500 10px DM Mono;letter-spacing:.1em}
+.event-section-label p{color:var(--muted);font-size:13px;margin:0}
+.upcoming-grid,.events-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.upcoming-card{position:relative;display:flex;flex-direction:column;min-height:325px;padding:34px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,#171b26,#0e1016);overflow:hidden}
+.upcoming-card.featured{background:radial-gradient(circle at 90% 5%,rgba(180,105,233,.29),transparent 45%),linear-gradient(135deg,#252a48,#111820);border-color:rgba(166,184,249,.3)}
+.upcoming-card:after{content:'';position:absolute;right:-60px;bottom:-115px;width:270px;height:270px;border:1px solid rgba(108,229,215,.14);border-radius:50%;box-shadow:0 0 0 50px rgba(108,229,215,.025),0 0 0 100px rgba(108,229,215,.02);pointer-events:none}
+.upcoming-card>span{font:500 11px DM Mono;letter-spacing:.09em;color:var(--aqua)}
+.upcoming-card h3{position:relative;z-index:1;margin:auto 0 12px;font-size:clamp(28px,3vw,42px);line-height:1.12;letter-spacing:-.05em}
+.upcoming-card p{position:relative;z-index:1;max-width:400px;color:#bec2cd;line-height:1.55;font-size:14px}
+.upcoming-card a{position:relative;z-index:2;display:inline-flex;align-items:center;gap:10px;align-self:flex-start;margin-top:12px;color:#5af0d0;text-decoration:none;font:500 11px DM Mono;text-transform:uppercase;letter-spacing:.07em}
+.upcoming-card a:hover{text-decoration:underline}
+.upcoming-card a svg{width:16px}
+.events-grid article{min-height:320px;background:#121319!important}
+.events-grid article:nth-child(2){background:linear-gradient(145deg,#222b42,#141822)!important}
+.events-grid article:nth-child(4){background:linear-gradient(145deg,#202035,#14141d)!important}
+.events-grid h3{font-size:clamp(24px,2.6vw,33px)}
+.event-photo{display:block;width:100%;height:190px;object-fit:cover;margin:-30px -30px 24px;max-width:calc(100% + 60px)}
+.event-archive{margin-top:55px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.event-archive summary{display:flex;justify-content:space-between;align-items:center;gap:18px;cursor:pointer;list-style:none;padding:28px 0;font-size:clamp(18px,2.4vw,25px);font-weight:700;letter-spacing:-.03em}
+.event-archive summary::-webkit-details-marker{display:none}
+.event-archive summary span{display:flex;align-items:center;gap:12px;color:var(--muted);font:400 10px DM Mono;letter-spacing:0}
+.event-archive summary svg{width:18px;color:var(--aqua);transition:transform .25s}
+.event-archive[open] summary svg{transform:rotate(90deg)}
+.archive-months{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 55px;padding:12px 0 55px}
+.archive-month h3{color:var(--aqua);font:500 11px DM Mono;text-transform:uppercase;letter-spacing:.12em}
+.archive-month ul{list-style:none;padding:0;margin:0}
+.archive-month li{display:grid;grid-template-columns:70px 1fr;gap:10px;padding:12px 0;border-top:1px solid var(--line);font-size:13px;line-height:1.5;color:#c6c8d2}
+.archive-month time{color:#858895;font:400 10px/1.8 DM Mono}
+@media(max-width:800px){.upcoming-grid,.events-grid,.archive-months{grid-template-columns:1fr}.event-section-label{margin-top:75px}.event-archive summary{align-items:flex-start;flex-direction:column}.upcoming-card{min-height:290px}.events-grid article{min-height:300px}}

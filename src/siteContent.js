@@ -32,11 +32,26 @@ export const siteContent = {
     research:['Responsible AI','Ethical AI','Explainability','Bias & Fairness','Human–AI Collaboration','Natural Language Processing','Usability','Privacy & Safety']
   },
   events: {
-    eyebrow:'On the horizon', title:['Ideas are better','when shared.'], copy:'Dates remain provisional. Confirmed programme details and registration links will be announced here.',
+    eyebrow:'Our events', title:['Where ideas','meet people.'], copy:'Explore the talks, workshops, collaborations and community moments shaping Innovation Xperience.',
     items:[
-      {date:'14 OCT',title:'HCAI Leadership Lessons',text:'A leadership series exploring responsible, human-centred AI.'},
-      {date:'24 OCT',title:'Innovation Xperience Kick-off',text:'Meet the community and discover the programme.'},
-      {date:'24—25 NOV',title:'HCAI Symposium',text:'Two days of ideas, research and human-centred technology.'}
+      {date:'5–6 JUN 2026',title:'IBM × City of Magdeburg Hackathon',text:'A collaborative hackathon bringing together ideas, teams and technology.'},
+      {date:'11 JUN 2026',title:'MeetUp Magdeburg Digital',text:'Innovation Xperience hosted Magdeburg’s digital community for exchange and connection.'},
+      {date:'9 JUL 2026',title:'Invited lecture: Dr. Candida Maria Greco',text:'An international perspective on human values and moral foundations in LLMs.'},
+      {date:'9–10 JUL 2026',title:'DiLanEdu-WB Study Visit',text:'Seminars and workshops with participants of the EU Erasmus+ project.'}
+    ],
+    upcoming:[
+      {date:'2 OCT 2026',title:'Meet potential founders',text:'Introducing the incubator and its support for new ideas.'},
+      {date:'30 NOV – 1 DEC 2026',title:'4th HCAI Symposium · AI + Health',text:'Explore the symposium programme and updates in Magdeburg.',url:'https://ovgu-hcai.github.io/symposium2026/#/',cta:'Visit symposium website'}
+    ],
+    archive:[
+      {month:'January',items:[['27 Jan','Student project poster presentations']]},
+      {month:'February',items:[['11 Feb','MakerLabs · Building 40 / Sports'],['16 Feb','Incubator presentation to Prof. Jansen and postdoctoral researcher'],['26 Feb','Introduction to new tutors and staff'],['27 Feb','Exchange with Ingo Heyroth of HASOMED'],['27 Feb','Invited lecture by Prof. Marco Polignano']]},
+      {month:'March',items:[['19 Mar','MeetUp Magdeburg Digital'],['26 Mar','Exchange with Karsten Steinmetz and Jörg Vierhaus'],['27 Mar','Incubator presentation to Prof. Arndt']]},
+      {month:'April',items:[['13 Apr','European Defence Fund information event at OVGU'],['14 Apr','Hackathon planning with IBM and the City of Magdeburg'],['16 Apr','Startup Open Café at HASOMED with Byte Robotics and DocSensei'],['22 Apr','Exchange with HASOMED'],['23 Apr','Incubator introduction for HCAI master’s students interested in startups']]},
+      {month:'May',items:[['7 May','KI-Campus podcast discussion'],['19 May','Exchange with IEPS and the State Office for Surveying and Geoinformation'],['20 May','Exchange with HASOMED'],['21 May','Follow-up with Karsten Steinmetz and Jörg Vierhaus'],['26 May','Exchange with Katja Peters of Bechtle']]},
+      {month:'June',items:[['1 Jun','Visit by vocational and business education students'],['4 Jun','Exchange with Bechtle'],['5 Jun','Visit by Dr.-Ing. Danny Schott and student'],['5–6 Jun','IBM × City of Magdeburg Hackathon'],['11 Jun','Exchange with Anja Guderjahn, founder of MoXxA®'],['11 Jun','Hosted MeetUp Magdeburg Digital'],['18 Jun','TUGZ Startup Lounge · Pitch Night']]},
+      {month:'July',items:[['9 Jul','Invited lecture by Dr. Candida Maria Greco'],['9–10 Jul','DiLanEdu-WB Erasmus+ study visit, seminars and workshops']]},
+      {month:'September',items:[['14 Sep','Exchange with Lars and Jana Dornheim of Dornheim Consulting'],['21 Sep','Exchange with Prof. Luca Simeoni of the OVGU Faculty of Medicine']]}
     ]
   },
   people: {
